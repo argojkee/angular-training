@@ -1,0 +1,15 @@
+<app-global-error></app-global-error>
+<app-navigation></app-navigation>
+<div class="max-w-2xl container mx-auto pt-5 mt-[50px]">
+  <router-outlet></router-outlet>
+</div>
+
+<!-- Чтобы подтянулся ngModel, в файле app.module сделат импорт 
+import { FormsModule } from '@angular/forms';
+И добавить в массив импортов этот модуль  -->
+
+<!-- //! Сгенерировать файл обрабортки ошибки - ng g s services/error --skip-tests
+//?g=generate; s=service; services/error = path //! Готовый компонент ошибки ng
+g c components/global-error --skip-tests //? c=component //! Filter pipes ?? ng
+g p pipes/filter-products //? p=pipe //!Генерируем новый компонент ng g c
+components/modal --skip-tests -->
